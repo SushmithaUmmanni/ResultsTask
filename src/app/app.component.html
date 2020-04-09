@@ -1,0 +1,42 @@
+<router-outlet></router-outlet>
+<div>
+  <body>
+    <h1 style="color:blue;">JNTUA  RESULTS</h1>
+
+  </body>
+  
+ Enter Roll No: <input type='text' [(ngModel)]="rollno" >
+ <button style="background-color: chartreuse;" (click)=data() >Get Results</button>
+   
+
+ <!-- <p *ngFor='let i of results'>{{i.Rollno}}</p> -->
+ <div *ngIf="flag">
+   <p style="color: blueviolet;" >student name:{{name}}</p>
+   <table border="2px" >
+     <tr>
+       <td>subjects</td>
+       <td>internals</td>
+       <td>externals</td>
+       <td>total</td>
+     </tr>
+     <tr>
+      <td>java</td>
+      <td>21</td>
+      <td>13</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>python</td>
+      <td>21</td>
+      <td>13</td>
+      <td>34</td>
+    </tr>  
+    <tr>
+      <td>c</td>
+      <td>21</td>
+      <td>13</td>
+      <td>34</td>
+    </tr>
+   </table>
+ </div>
+</div>
